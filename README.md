@@ -10,3 +10,5 @@ Pass "Block" or "Allow" as user parameters to switch between the traffic flowing
 
 #### Usage
 It is recommended to invoke this function early during pipeline execution to "block" traffic to your resources will you are updating the application/performing back ups/etc. Create a Rule that presents a fixed 503 response to requests ("We will be right back"). When pipeline activities are complete, invoke the same function to allow traffic back through the ELB.
+
+![ELB Rules](https://github.com/chimpytt/aws-lambda-elb-rules/blob/master/elb_bitbucket.PNG)
